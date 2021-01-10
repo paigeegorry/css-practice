@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #fafafa;
+  color: #262626;
+
+  header {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+
+    #instagram-logo {
+      height: 29px;
+      margin-top: 10px;
+    }
+
+    form {
+      margin-top: 10px;
+      input {
+        padding: 5px;
+      }
+    }
+
+    #profile-pic {
+      height: 50px;
+      border-radius: 50%;
+    
+    }
+  }
+  main {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+
+    #profile-information {
+      width: 90%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 50px;
+      
+      #profile-picture {
+        height: 150px;
+        width: 150px;
+        display: inline;
+      
+        #profile-image {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+      
+      #profile-name {
+        display: flex;
+        align-items: center;
+        h1 {
+          font-size: 28px;
+          font-weight: 300;
+        }
+        #follow-icons {
+          margin-left: 20px;
+          height: 50px;
+        }
+      }
+      
+      ul {
+        font-size: 16px;
+        list-style: none;
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        padding: 0;
+        margin-top: 0;
+        
+        .count {
+          font-weight: bold;
+        }
+      }
+      
+      #bio {
+        h2 {
+          size: 16px;
+          margin-bottom: 10px;
+        }
+        p {
+          margin-top: 5px;
+        }
+      }
+    }
+    
+    
+    #stories {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 40%;
+      align-content: flex-start;
+      
+      .story-container {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        .story-photo {
+          height: 77px;
+          width: 77px;
+          display:block;
+          border: 1px solid lightgray;
+          border-radius: 50%;
+          
+          img {
+            object-fit: cover;
+            border-radius: 50%;
+            padding: 2px;
+            height: 95%;
+            width: 95%;
+          }
+        }
+        
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+
+    #divider {
+      border-top: 1px solid lightgray;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: lightgray;
+      font-size: 14px;
+      #posts {
+        border-top: 1px solid black;
+        color: black;
+        margin-right: 20px;
+        font-weight: bold;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        img {
+          height: 15px;
+          margin-right: 5px;
+        }
+      }
+    }
+    
+    #photo-grid {
+      align-self: center;
+      width: 110%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      span {
+        height: 293px;
+        width: 293px;
+        display: block;
+        margin: 25px 0px 25px 0px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
